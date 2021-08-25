@@ -1,0 +1,53 @@
+<mat-toolbar class="navbar">
+  <div class="inner-nav">
+    <img src="../../assets/logo/logo.svg" class="logo">
+    <span class="spacer"></span>
+    <button mat-icon-button>
+      <mat-icon 
+        class="icon-button" 
+        matBadge="&zwnj;" 
+        matBadgeColor="primary" color="blue"
+        matBadgeSize="small">
+          notifications
+      </mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon class="icon-button">account_circle</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+
+<div class="main">
+
+  <div class="btn-container">
+    <button mat-button class="nav-btn" [routerLink]="['/resumo']" routerLinkActive="router-active">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-button class="nav-btn" [routerLink]="['/funcoes-adm']" routerLinkActive="router-active">
+      <mat-icon>assignment_ind</mat-icon>
+      <span>Funções Administrativas</span>
+    </button>
+    <button mat-button class="nav-btn" [routerLink]="['/consumo']" routerLinkActive="router-active">
+      <mat-icon>assessment</mat-icon>
+      <span>Consumo</span>
+    </button>
+    <button mat-button class="nav-btn" [routerLink]="['/plano']" routerLinkActive="router-active">
+      <mat-icon>dns</mat-icon>
+      <span>Plano</span>
+    </button>
+    <button mat-button class="nav-btn" [routerLink]="['/pagamento']" routerLinkActive="router-active">
+      <mat-icon>monetization_on</mat-icon>
+      <span>Pagamento</span>
+    </button>
+    <button mat-button class="nav-btn" [routerLink]="['/documentos']" routerLinkActive="router-active">
+      <mat-icon>description</mat-icon>
+      <span>Documentos</span>
+    </button>
+  </div>
+
+  <div class="viewport">
+    <router-outlet></router-outlet>
+  </div>
+  
+</div>

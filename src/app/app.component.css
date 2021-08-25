@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1440px) {
+   .btn-container {
+       display: none !important;
+   }
+}
+
+.navbar {
+    width: 100%;
+    height: 88px;
+    background: #F7F7F7;
+    justify-content: center;
+}
+
+.inner-nav {
+    width: 70vw; 
+    display: flex; 
+    flex-flow: row;
+}
+
+.logo {
+    height: 52px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.icon-button {
+    height: 24.38px;
+    color: #636363;
+}
+
+.main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.btn-container {
+    display: flex;
+    flex-flow: column;
+    width: 15vw;
+}
+
+.nav-btn {
+    text-align: start;
+    margin: 3px 0;
+}
+
+.viewport {
+    width: 53vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.btn-container .mat-icon {
+    color: #969696;
+}
+
+.btn-container span {
+    color: #969696;
+    margin-left: 15px;
+}
+
+.router-active {
+    background: #F5F5F5;
+    color: #3296BA !important;
+}
+.router-active span {
+    color: #3296BA !important;
+}
+.router-active .mat-icon {
+    color: #3296BA !important;
+}
+::ng-deep.mat-badge-content{
+    background : #48B8E0;
+    color: #fff;
+}

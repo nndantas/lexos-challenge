@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="header">
+        <h4>Component sampled by lazy loading</h4>
+    </div>
+    <div class="container">
+        <div class="card">
+            <a mat-icon-button style="color: #25cc64;" id="wpp">
+                <mat-icon class="fab fa-whatsapp btn" onClick="window.open(['//api.whatsapp.com/send?phone=5512991393723'])">
+                </mat-icon>
+            </a>
+            <a mat-icon-button style="color: #0174b4;" id="fbk">
+                <mat-icon class="fab fa-linkedin btn" onClick="window.open(['//linkedin.com/in/nndantas'])">
+                </mat-icon>
+            </a>
+            <a mat-icon-button style="color: #1a1f23;" id="gth">
+                <mat-icon class="fab fa-github btn" onClick="window.open(['//github.com/nndantas'])">
+                </mat-icon>
+            </a>
+        </div>
+        <div class="footer">
+            <span>{{currentRoute}}</span>
+        </div>
+    </div>
+</div>
